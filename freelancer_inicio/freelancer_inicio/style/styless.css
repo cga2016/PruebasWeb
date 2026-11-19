@@ -1,0 +1,93 @@
+:root{
+    --blanco : #ffffff;
+    --negro: #212121;
+    --principal: #ffc107;
+    --secundario: #0097A7;
+    --gris: #333333;
+
+
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+
+}
+
+h1.titulo span{
+    font-size: 2rem;
+}
+.titulo span{
+    font-size: 2rem;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.navegacion-principal{
+  
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.navegacion-principal a{
+   color: var(--blanco);
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: 700;
+   padding: 1rem;
+}
+.navegacion-principal a:hover{
+    background-color: var(--principal);
+    color: var(--negro);
+}
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+
+    }
+    
+}
+
+@media (min-width: 480px) {
+    .navegacion-principal{
+
+
+    }
+}
+
+
+.nav-background{
+    background-color: var(--secundario);
+}
+
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    padding: 2rem;
+    position:relative;  
+}
+
+.contenido-hero{
+
+}
